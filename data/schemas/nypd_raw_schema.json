@@ -1,0 +1,48 @@
+{
+    "dataset": "NYPD Arrest Data (Historic)",
+    "format": "CSV",
+    "estimated_size": "1.2GB",
+    "columns": [
+        {
+            "name": "ARREST_KEY",
+            "type": "string"
+        },
+        {
+            "name": "ARREST_DATE",
+            "type": "date"
+        },
+        {
+            "name": "LAW_CAT_CD",
+            "type": "string"
+        },
+        {
+            "name": "ARREST_BORO",
+            "type": "string"
+        },
+        {
+            "name": "AGE_GROUP",
+            "type": "string"
+        },
+        {
+            "name": "PERP_SEX",
+            "type": "string"
+        },
+        {
+            "name": "PERP_RACE",
+            "type": "string"
+        },
+        {
+            "name": "OFNS_DESC",
+            "type": "string"
+        },
+        {
+            "name": "Latitude",
+            "type": "double"
+        },
+        {
+            "name": "Longitude",
+            "type": "double"
+        }
+    ],
+    "notes": "Schema reflects structured administrative arrest dataset used for distributed PySpark processing."
+}

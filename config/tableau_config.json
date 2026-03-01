@@ -1,0 +1,25 @@
+{
+    "project": {
+        "name": "NYPD Arrest Severity Prediction",
+        "module": "7006SCN - Machine Learning and Big Data",
+        "student": "Ofierohor Ufuoma Earnest"
+    },
+    "data_sources": {
+        "model_comparison": "/content/outputs/model_comparison",
+        "confusion_matrix": "/content/outputs/confusion_matrix_dt",
+        "roc_curve_all_models": "/content/outputs/roc_curve_points_all_models",
+        "strong_scaling": "/content/outputs/strong_scaling",
+        "weak_scaling": "/content/outputs/weak_scaling"
+    },
+    "dashboards": {
+        "dashboard_1": "Data Overview",
+        "dashboard_2": "Model Evaluation",
+        "dashboard_3": "Scalability Analysis",
+        "dashboard_4": "Analytical Insights"
+    },
+    "visualization_settings": {
+        "default_theme": "light",
+        "export_format": "twbx",
+        "enable_interactivity": true
+    }
+}

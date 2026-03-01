@@ -1,0 +1,28 @@
+
+# ============================================
+# 7006SCN - Spark Configuration File
+# ============================================
+
+spark:
+  app:
+    name: "NYPD_Arrest_Severity_Project"
+
+  sql:
+    shuffle:
+      partitions: 200
+    adaptive:
+      enabled: true
+
+  network:
+    timeout: "600s"
+
+  executor:
+    heartbeatInterval: "60s"
+
+  storage:
+    persistence: "MEMORY_AND_DISK"
+
+  notes:
+    - "Shuffle partitions tuned for strong scaling experiments."
+    - "Adaptive query execution enabled for distributed optimization."
+    - "Network timeout increased for large cross-validation jobs."

@@ -1,0 +1,40 @@
+
+# ============================================
+# 7006SCN - .gitignore
+# ============================================
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Spark outputs
+outputs/
+models/
+
+# Large data files
+*.csv
+*.parquet
+*.zip
+*.gz
+
+# Colab / temporary files
+/content/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files (if private)
+.env
+
+# Virtual environments
+venv/
+env/

@@ -1,0 +1,20 @@
+
+name: nypd_bigdata_env
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyter
+  - findspark
+  - openjdk=11
+  - pip:
+      - pyspark==3.5.1

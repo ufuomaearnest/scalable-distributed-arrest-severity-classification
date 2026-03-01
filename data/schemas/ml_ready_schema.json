@@ -1,0 +1,19 @@
+{
+    "dataset": "ML Ready Dataset",
+    "format": "Parquet",
+    "columns": [
+        {
+            "name": "label",
+            "type": "double",
+            "description": "Indexed severity class"
+        },
+        {
+            "name": "features",
+            "type": "vector",
+            "description": "Assembled and scaled feature vector"
+        }
+    ],
+    "target_variable": "SEVERITY (derived from LAW_CAT_CD)",
+    "storage": "Parquet",
+    "persistence": "MEMORY_AND_DISK"
+}
