@@ -3,11 +3,11 @@
 # This file contains EXACTLY your notebook code
 # ============================================
 
-!apt-get install openjdk-8-jdk-headless -qq > /dev/null
+#!apt-get install openjdk-8-jdk-headless -qq > /dev/null
 
-!java -version
+#!java -version
 
-!pip install pyspark==3.5.1
+#!pip install pyspark==3.5.1
 
 import os
 
@@ -32,7 +32,7 @@ from google.colab import files
 uploaded = files.upload()
 print(uploaded.keys())
 
-!ls -lh /content | sed -n '1,200p'
+#!ls -lh /content | sed -n '1,200p'
 
 import os, glob
 
@@ -49,7 +49,7 @@ if not os.path.exists(CSV_PATH):
 print("Using CSV_PATH:", CSV_PATH)
 print("Exists?", os.path.exists(CSV_PATH))
 
-!pip -q install pyspark==3.5.1
+#!pip -q install pyspark==3.5.1
 
 from pyspark.sql import SparkSession
 
@@ -155,7 +155,7 @@ OUT_DIR = "/content/NYPD_Tableau_Cleaned"
       .csv(OUT_DIR)
 )
 
-!ls -lh {OUT_DIR}
+#!ls -lh {OUT_DIR}
 
 import glob, shutil
 
@@ -165,7 +165,7 @@ print("Part files:", part_files)
 FINAL_CSV = "/content/NYPD_Tableau_Cleaned.csv"
 shutil.copy(part_files[0], FINAL_CSV)
 
-!ls -lh /content | grep NYPD_Tableau_Cleaned.csv
+#!ls -lh /content | grep NYPD_Tableau_Cleaned.csv
 
 from google.colab import files
 files.download(FINAL_CSV)
@@ -538,7 +538,7 @@ except NameError:
 
 
 # --- 3) Show files in /content so I can download them ---
-!ls -lh /content | sed -n '1,200p'
+#!ls -lh /content | sed -n '1,200p'
 
 from google.colab import files
 files.download("/content/model_comparison_results.csv")
